@@ -1,0 +1,51 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('mensagem'){
+            steps {
+                sh 'python  .\menssagem.py '
+            }
+        }
+
+        stage('numero aleatorio'){
+            steps{
+                sh 'python .\numero_aleatorio.py'
+            }
+            
+            steps{
+                sh 'python .\criacao_arquivo.py'
+            }
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

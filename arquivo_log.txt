@@ -1,0 +1,5 @@
+             FILE TESTE PARA JENKINS FILE          
+
+    - O numero sorteado aleatoriamente => 6
+
+    - A mesagem que consta na variavel no arquivo de mensagem => hello world- mesagem do arquivo 'mensagem.py'
