@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('mensagem'){
             steps {
-                echo 'python  .\menssagem.py '
+                sh 'python  menssagem.py '
             }
         }
 
         stage('numero aleatorio'){
             steps{
-                echo 'python .\numero_aleatorio.py'
+                sh 'python numero_aleatorio.py'
             }
             
             steps{
-                echo 'python .\criacao_arquivo.py'
+                sh 'python criacao_arquivo.py'
             }
 
         }
