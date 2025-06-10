@@ -4,24 +4,21 @@ pipeline {
     stages {
         stage('mensagem'){
             steps {
-                script{
                 sh 'python  menssagem.py '
-            }}
+            }
         }
 
         stage('numero aleatorio'){
             steps{
-                script{
-
                 sh 'python numero_aleatorio.py'
-            }}
+            }
             
+        stage('criacao  arquivo'){
             steps{
-                script{
-
                 sh 'python criacao_arquivo.py'
-            }}
+            }
 
+        }
         }
 
     }
